@@ -1,13 +1,7 @@
 name: report workflow failures
 
 on:
-  workflow_run:
-    workflows:
-      - Octicons Publish
-      - Codespaces Prebuilds
-    types:
-      - completed
-
+  workflow_dispatch:
 permissions: {}
 
 concurrency:

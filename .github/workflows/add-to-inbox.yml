@@ -1,8 +1,6 @@
 name: Add to Inbox 📥
 on:
-  issues:
-    types: [opened, reopened]
-
+  workflow_dispatch:
 jobs:
   add-to-inbox:
     if: ${{ github.repository == 'primer/behaviors' }}

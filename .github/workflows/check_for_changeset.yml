@@ -1,16 +1,7 @@
 name: Check for changeset
 
 on:
-  pull_request:
-    types:
-      # On by default if you specify no types.
-      - 'opened'
-      - 'reopened'
-      - 'synchronize'
-      # For `skip changeset` only.
-      - 'labeled'
-      - 'unlabeled'
-
+  workflow_dispatch:
 jobs:
   check-for-changeset:
     name: Check for changeset
